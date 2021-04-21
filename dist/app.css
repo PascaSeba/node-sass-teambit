@@ -100,29 +100,45 @@ body button:hover {
 }
 
 /* Fine head con jumbotron */
-/* Inizio prima sezione del main */
-.second {
+/* Inizio prima sezione generale del main */
+.my_main {
   background-color: #ffe7d2;
   margin-top: 15px;
-  height: 50vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 #first_pink_section,
 #second_pink_section {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 70px;
   padding-bottom: 50px;
 }
 #first_pink_section h2,
 #second_pink_section h2 {
-  margin-bottom: 45px;
+  margin-bottom: 50px;
+}
+
+#first_pink_section {
+  border-bottom: 1px solid black;
+}
+
+.allblocks_container {
+  margin-bottom: 100px;
 }
 
 .block {
   width: calc(100%/3);
+  align-self: center;
 }
 .block img {
   width: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.block .first_img {
+  width: 41.8%;
 }
 .block .notsafe_img {
   -o-object-fit: cover;
@@ -131,5 +147,65 @@ body button:hover {
   margin-top: 5px;
   height: 85%;
 }
+.block .first_second_img {
+  width: 40%;
+  margin-top: 11px;
+}
+.block .safe_img {
+  width: 13%;
+}
+.block p {
+  margin-top: 20px;
+}
 
-/* Fine prima sezione del main */
+.singolar {
+  width: 30%;
+}
+
+#second_pink_section h2:last-child {
+  margin-bottom: 0;
+  margin-top: 100px;
+}
+
+/* Fine prima sezione generale del main */
+/* Inizio seconda sezione generale del corpo della pagina */
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.second_block {
+  color: #614a38;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.second_block .principal_img {
+  width: 50%;
+  height: 47%;
+}
+.second_block .text_container {
+  width: 24%;
+  line-height: 30px;
+  flex-direction: column;
+}
+.second_block .text_container h2 {
+  font-size: 1.6em;
+  margin-bottom: 50px;
+}
+.second_block .text_container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.second_block .text_container a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #2c4792;
+  margin-bottom: 20px;
+}
+.second_block .text_container p,
+.second_block .text_container a {
+  font-weight: 500;
+}
+.second_block .text_container img {
+  width: 100%;
+}
