@@ -14,6 +14,7 @@ body button {
     font-family: $my_font_family;
     cursor: pointer;
     outline: none;
+    border-radius: 5px;
     &:hover {
         background-color: $button_hover_background;
     }
@@ -25,7 +26,7 @@ body button {
 
 .main_container {
     width: 100%;
-    justify-content: center;
+    @include my-flexed-main-container;
 }
 
 .flexed {

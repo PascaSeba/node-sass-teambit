@@ -2,3 +2,9 @@
     display: flex;
     justify-content: center;
 }
+
+@mixin my-button {
+    background-color: $buttons_color;
+    color: white;
+    padding: 5px;
+}

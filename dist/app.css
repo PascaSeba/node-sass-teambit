@@ -14,6 +14,7 @@ body button {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   outline: none;
+  border-radius: 5px;
 }
 body button:hover {
   background-color: #1f3470;
@@ -25,6 +26,7 @@ body button:hover {
 
 .main_container {
   width: 100%;
+  display: flex;
   justify-content: center;
 }
 
@@ -98,3 +100,36 @@ body button:hover {
 }
 
 /* Fine head con jumbotron */
+/* Inizio prima sezione del main */
+.second {
+  background-color: #ffe7d2;
+  margin-top: 15px;
+  height: 50vh;
+}
+
+#first_pink_section,
+#second_pink_section {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#first_pink_section h2,
+#second_pink_section h2 {
+  margin-bottom: 45px;
+}
+
+.block {
+  width: calc(100%/3);
+}
+.block img {
+  width: 35%;
+}
+.block .notsafe_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 28%;
+  margin-top: 5px;
+  height: 85%;
+}
+
+/* Fine prima sezione del main */

@@ -1,0 +1,33 @@
+/* Inizio prima sezione del main */
+
+.second {
+    background-color: $pink_body_background;
+    margin-top: 15px;
+    height: 50vh;
+}
+
+#first_pink_section,
+#second_pink_section {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h2 {
+        margin-bottom: 45px;
+    }
+}
+
+.block {
+    width: calc(100%/3);
+    img {
+        width: 35%;
+    }
+    .notsafe_img {
+        object-fit: cover;
+        width: 28%;
+        margin-top: 5px;
+        height: 85%;
+    }
+}
+
+
+/* Fine prima sezione del main */
