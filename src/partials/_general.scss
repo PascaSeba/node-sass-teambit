@@ -10,16 +10,6 @@ body {
     color: $texts_color;
 }
 
-body button {
-    font-family: $my_font_family;
-    cursor: pointer;
-    outline: none;
-    border-radius: 5px;
-    &:hover {
-        background-color: $button_hover_background;
-    }
-}
-
 .little_container {
     width: 80%;
 }
@@ -31,4 +21,9 @@ body button {
 
 .flexed {
     display: flex;
+}
+
+.margin_block {
+    float: right;
+    clear: right;
 }

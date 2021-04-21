@@ -1,0 +1,47 @@
+.footer_container {
+    @include separe-sections;
+    line-height: 25px;
+}
+
+.teambit_scope {
+    width: 25%;
+    font-size: 1.1em;
+    flex-direction: row;
+    font-weight: 900;
+    height: fit-content;
+    img {
+        width: 30%;
+        margin-right: 10px;
+        object-fit: cover;
+    }
+    span {
+        color: $buttons_color;
+        font-size: 0.8em;
+    }
+}
+
+.footer_nav {
+    width: 65%;
+    margin-left: 10%;
+    div {
+        width: calc(100%/5);
+        h3 {
+            font-size: 1.3em;
+            margin-bottom: 25px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+        ul li {
+            display: inline-block;
+            list-style-type: none;
+            font-size: 0.9em;
+            font-weight: 700;
+            cursor: pointer;
+            &:hover {
+                color: rgb(204, 173, 116);
+            }
+        }
+    }
+}

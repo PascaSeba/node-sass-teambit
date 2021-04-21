@@ -11,13 +11,14 @@
     text-align: center;
     padding-top: 70px;
     padding-bottom: 50px;
+    color: white;
     h2 {
         margin-bottom: 50px;
     }
 }
 
 #first_pink_section {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(214, 172, 172);
 }
 
 .allblocks_container {
@@ -30,6 +31,10 @@
     img {
         width: 35%;
         object-fit: cover;
+        background-color: rgba(0, 0, 0, 0.705);
+        border-radius: 30px;
+        padding: 5px;
+        border: 1px solid white;
     }
     .first_img {
         width: 41.8%;
@@ -45,7 +50,10 @@
         margin-top: 11px;
     }
     .safe_img {
-        width: 13%;
+        width: 16%;
+    }
+    .margin_img {
+        margin-top: 6px;
     }
     p {
         margin-top: 20px;
@@ -68,8 +76,8 @@
 /* Inizio seconda sezione generale del corpo della pagina */
 
 .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    @include separe-sections;
+    width: 100%;
 }
 
 .second_block {
@@ -95,7 +103,7 @@
         a {
             font-size: 1.2em;
             text-decoration: none;
-            color: $buttons_color;
+            color: rgb(13, 180, 88);
             margin-bottom: 20px;
         }
         p,
@@ -107,3 +115,78 @@
         }
     }
 }
+
+
+/* Fine seconda sezione generale del corpo della pagina */
+
+
+/* Inizio terza sezione generale del corpo della pagina */
+
+.getstarted_container {
+    background-color: $pink_body_background;
+}
+
+.getstarted_section {
+    @include separe-sections;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: relative;
+    h1 {
+        font-size: 2.5em;
+        line-height: $big_line_height;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .quote {
+        position: absolute;
+        top: 31.1%;
+        left: 27.55%;
+        color: white;
+        font-size: 2em;
+    }
+    .getstarted_buttons {
+        margin-top: 30px;
+        button {
+            @include my-button;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        button img {
+            @include button-images;
+        }
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}
+
+.getstarted_text {
+    width: 45%;
+    background-color: $violet_palette_color;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    p {
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+    img {
+        width: 8%;
+        margin-right: 20px;
+    }
+    .founders {
+        margin: 0;
+    }
+    span {
+        font-size: 0.8em;
+        color: lightgrey;
+    }
+    .founders_info {
+        margin-top: 9.5px;
+    }
+}
+
+
+/* Fine terza sezione generale del corpo della pagina */

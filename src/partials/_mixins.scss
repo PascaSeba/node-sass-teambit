@@ -7,4 +7,22 @@
     background-color: $buttons_color;
     color: white;
     padding: 5px;
+    font-family: $my_font_family;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    &:hover {
+        background-color: $button_hover_background;
+    }
+}
+
+@mixin separe-sections {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@mixin button-images {
+    width: 16px;
+    vertical-align: text-bottom;
+    margin-right: 3px;
 }
