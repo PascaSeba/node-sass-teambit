@@ -7,6 +7,16 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  color: #614a38;
+}
+
+body button {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+body button:hover {
+  background-color: #1f3470;
 }
 
 .little_container {
@@ -39,8 +49,8 @@ body {
   list-style-type: none;
   display: inline-block;
   padding-left: 5px;
+  cursor: pointer;
 }
-
 .nav_space button {
   padding: 8px;
 }
@@ -49,8 +59,42 @@ body {
 /* Head con jumbotron */
 .head_inf {
   width: 100%;
-  height: 50vh;
-  background-image: url(/images/illustration-main.jpg?b02bfc04b821942b18310d564a1fc8c5);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 50px;
+  line-height: 50px;
+}
+
+.headinf_text {
+  width: 50%;
+  margin-right: 40px;
+}
+.headinf_text h1 {
+  font-size: 2.7em;
+  font-weight: 600;
+}
+.headinf_text .main_paragraph {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.headinf_text button {
+  background-color: #2c4792;
+  color: white;
+  padding: 5px;
+}
+.headinf_text img {
+  width: 16px;
+  vertical-align: text-bottom;
+  margin-right: 3px;
+}
+
+.headinf_image {
+  width: 50%;
+}
+.headinf_image img {
+  width: 100%;
 }
 
 /* Fine head con jumbotron */

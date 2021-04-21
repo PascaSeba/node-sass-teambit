@@ -5,8 +5,18 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $my_font_family;
     font-size: 14px;
+    color: $texts_color;
+}
+
+body button {
+    font-family: $my_font_family;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+        background-color: $button_hover_background;
+    }
 }
 
 .little_container {
