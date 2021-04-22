@@ -25,8 +25,7 @@ body {
 }
 
 .margin_block {
-  float: right;
-  clear: right;
+  justify-content: flex-end;
 }
 
 /* Head Superiore */
@@ -159,7 +158,6 @@ body {
 
 .block {
   width: calc(100%/3);
-  align-self: center;
 }
 .block img {
   width: 35%;

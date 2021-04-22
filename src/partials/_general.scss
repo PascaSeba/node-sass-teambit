@@ -24,6 +24,5 @@ body {
 }
 
 .margin_block {
-    float: right;
-    clear: right;
+    justify-content: flex-end;
 }
