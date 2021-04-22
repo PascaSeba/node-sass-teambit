@@ -23,7 +23,10 @@
         padding-left: 20px;
         cursor: pointer;
         font-weight: bold;
-        font-size: 0.9em;
+        font-size: 1em;
+        &:hover {
+            color: grey;
+        }
     }
     button {
         padding: 8px;
@@ -32,6 +35,11 @@
         border: 1px solid grey;
         border-radius: 5px;
         margin-left: 20px;
+        cursor: pointer;
+        &:hover {
+            background-color: $violet_palette_color;
+            color: white;
+        }
         img {
             width: 18px;
             vertical-align: text-bottom;
